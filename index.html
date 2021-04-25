@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Product card</title>
+    <link rel="stylesheet" href="./test.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2 class="name">Product Name</h2>
+            <a href="##" class="buy">Buy Now</a>
+            <div class="circle"></div>
+            <img src="./images/shoes1.png" alt="none" class="product">
+        </div>
+        <div class="box">
+            <h2 class="name">Product Name</h2>
+            <a href="##" class="buy">Buy Now</a>
+            <div class="circle"></div>
+            <img src="./images/shoes2.png" alt="none" class="product">
+        </div>
+        <div class="box">
+            <h2 class="name">Product Name</h2>
+            <a href="##" class="buy">Buy Now</a>
+            <div class="circle"></div>
+            <img src="./images/shoes3.png" alt="none" class="product">
+        </div>
+    </div>
+    
+    <script src="vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".box"), {
+		max: 25,
+		speed: 400
+	});
+    </script>
+</body>
+</html>
